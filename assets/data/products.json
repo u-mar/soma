@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Colorful Pattern Shirts",
+      "description": "High-quality shirts with vibrant colors and patterns.",
+      "price": "238.85",
+      "old_price": "245.8",
+      "img_default": "assets/img/product-1-1.jpg",
+      "img_hover": "assets/img/product-1-2.jpg",
+      "badge": "Hot",
+      "rating": 5,
+      "in_stock": true
+    },
+    {
+      "id": 2,
+      "name": "Stylish Casual Dress",
+      "description": "Comfortable and stylish casual dress for any occasion.",
+      "price": "120.00",
+      "old_price": "150.00",
+      "img_default": "assets/img/product-2-1.jpg",
+      "img_hover": "assets/img/product-2-2.jpg",
+      "badge": "New",
+      "rating": 4,
+      "in_stock": true
+    },
+    {
+      "id": 3,
+      "name": "Elegant Women's Blazer",
+      "description": "Tailored blazer perfect for business or formal events.",
+      "price": "175.50",
+      "old_price": "200.00",
+      "img_default": "assets/img/product-3-1.jpg",
+      "img_hover": "assets/img/product-3-2.jpg",
+      "badge": "Sale",
+      "rating": 4,
+      "in_stock": true
+    },
+    {
+      "id": 4,
+      "name": "Classic White Sneakers",
+      "description": "Sleek and comfortable sneakers for everyday wear.",
+      "price": "89.99",
+      "old_price": "120.00",
+      "img_default": "assets/img/product-4-1.jpg",
+      "img_hover": "assets/img/product-4-2.jpg",
+      "badge": "Best Seller",
+      "rating": 5,
+      "in_stock": true
+    }
+  ]
+  

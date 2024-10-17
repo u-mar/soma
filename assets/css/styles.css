@@ -2125,3 +2125,22 @@ table {
     max-width: 270px;
   }
 }
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.view-all-link {
+  color: blue;
+  text-decoration: none;
+  font-size: var(--normal-font-size);
+  font-weight: var(--weight-600);
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
