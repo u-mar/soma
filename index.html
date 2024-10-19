@@ -43,7 +43,7 @@
         <a href="index.html" class="nav__logo">
           <img
             class="nav__logo-img"
-            src="assets/img/Soma3.svg"
+            src="assets/img/logo.svg"
             alt="website logo"
           />
         </a>
@@ -64,7 +64,7 @@
               <a href="shop.html" class="nav__link">Shop</a>
             </li>
             <li class="nav__item">
-              <a href="accounts.html" class="nav__link">My Account</a>
+              <a href="contact.html" class="nav__link">Contact</a>
             </li>
             <li class="nav__item">
               <a href="compare.html" class="nav__link">About</a>
@@ -85,10 +85,6 @@
           </div>
         </div>
         <div class="header__user-actions">
-          <a href="wishlist.html" class="header__action-btn" title="Wishlist">
-            <img src="assets/img/icon-heart.svg" alt="" />
-            <span class="count">3</span>
-          </a>
           <a href="cart.html" class="header__action-btn" title="Cart">
             <img src="assets/img/icon-cart.svg" alt="" />
             <span class="count">3</span>
@@ -170,6 +166,31 @@
           <!-- All products will be dynamically injected here -->
         </div>
       </section>
+
+      <section class="newsletter section home__newsletter">
+        <div class="newsletter__container container grid">
+          <h3 class="newsletter__title flex">
+            <img
+              src="./assets/img/icon-email.svg"
+              alt=""
+              class="newsletter__icon"
+            />
+            Sign in to Newsletter
+          </h3>
+          <p class="newsletter__description">
+            ...and receive new stock alerts.
+          </p>
+          <form action="" class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              class="newsletter__input"
+            />
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
       
       
     </main>
@@ -235,10 +256,10 @@
         <div class="footer__content">
           <h3 class="footer__title">Address</h3>
           <ul class="footer__links">
-            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="compare.html" class="footer__link">About Us</a></li>
             <li><a href="#" class="footer__link">Delivery Information</a></li>
             <li><a href="#" class="footer__link">Terms & Conditions</a></li>
-            <li><a href="#" class="footer__link">Contact Us</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
           </ul>
         </div>
         <div class="footer__content">
@@ -250,18 +271,9 @@
             <li><a href="#" class="footer__link">Help</a></li>
           </ul>
         </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Secured Payed Gateways</h3>
-          <img
-            src="./assets/img/payment-method.png"
-            alt=""
-            class="payment__img"
-          />
-        </div>
       </div>
       <div class="footer__bottom">
-        <p class="copyright">&copy; 2024 Omar. All right reserved</p>
-        <span class="designer">Designer by Omar</span>
+        <p class="copyright">&copy; 2024. All right reserved</p>
       </div>
     </footer>
 

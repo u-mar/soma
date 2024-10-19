@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif !important;
+}
+
+:root {
+  --primary-color: hsl(169, 82%, 27%);
+  --green-light: hsl(148, 38%, 91%);
+  --grey-light: hsl(186, 15%, 59%);
+  --grey-dark: hsl(187, 24%, 22%);
+  --red-main: hsl(0, 66%, 54%);
+}
+
+
+
+.contact_wrap {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin: 1.25rem;
+}
+
+h1 {
+  color: var(--grey-dark);
+  font-weight: 700;
+}
+
+.box1,
+.inputname {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.inputcheck {
+  display: flex;
+  gap: 1rem;
+}
+
+.inputradio {
+  display: flex;
+}
+
+.inputradio:has(input[type="radio"]:checked) {
+  border: solid 1px var(--primary-color);
+  background-color: var(--green-light);
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  background-color: white;
+  border-radius: 100%;
+  border: 1px solid var(--grey-light);
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 0.75em;
+  vertical-align: top;
+}
+
+input[type="radio"]:checked + label::before {
+  background: url(./assets/images/icon-radio-selected.svg);
+  height: 21px;
+  width: 20px;
+  border: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  background-color: white;
+  border-radius: 2px;
+  border: 2px solid var(--grey-light);
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 0.75em;
+  vertical-align: top;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background: url(./assets/images/icon-checkbox-check.svg);
+  width: 18px;
+  height: 18px;
+  border: none;
+}
+
+input[type="checkbox"]:checked + .inputradio {
+  border-color: var(--primary-color);
+  background-color: var(--green-light);
+}
+
+.required {
+  color: var(--primary-color);
+}
+
+.error-message {
+  display: none;
+  color: var(--red-main);
+}
+
+[type="text"],
+[type="email"],
+textarea {
+  border: 1px solid var(--grey-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+textarea {
+  padding: 1rem !important;
+  resize: none;
+  height: 150px;
+}
+
+[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.inputradio {
+  border: solid 1px var(--grey-light);
+  padding: 0.75em 1em;
+  border-radius: 5px;
+  width: 100%;
+}
+
+i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.75rem;
+}
+
+button {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--grey-dark);
+}
+
+footer {
+  bottom: 0;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 10px;
+  color: var(--grey-dark);
+}
+
+footer a {
+  color: var(--grey-dark);
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    padding: 1.5rem 1rem 0;
+    box-sizing: content-box;
+  }
+  .contact_wrap {
+    box-sizing: border-box;
+    margin: auto;
+  }
+  .box2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

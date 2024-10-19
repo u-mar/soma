@@ -103,7 +103,7 @@ function populateAllProducts(products) {
   const allProductsContainer = document.getElementById('all-products');
   
   // Limit to 5 products
-  const limitedProducts = products.slice(0, 5);
+  const limitedProducts = products.slice(0, 6);
 
   allProductsContainer.innerHTML = limitedProducts.map(product => `
     <div class="product__item">

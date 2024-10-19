@@ -89,17 +89,14 @@ function addEventListeners() {
     });
 }
 
-// WhatsApp redirection after checkout
 function redirectToWhatsApp(itemsForWhatsApp) {
-    const phoneNumber = "254799982410"; // Replace with the actual WhatsApp number
+    const phoneNumber = "254757197334";
 
-    // Check if there are any items in the cart
     if (itemsForWhatsApp.length === 0) {
         alert("Your cart is empty!");
         return;
     }
 
-    // Create the WhatsApp message with cart item details
     let message = "I want to order the following items:\n";
     itemsForWhatsApp.forEach((item, index) => {
         message += `${index + 1}. ${item.name} \n`; // Item name
@@ -108,7 +105,6 @@ function redirectToWhatsApp(itemsForWhatsApp) {
         message += `-------------------------\n`;
     });
 
-    // Total and shipping details
     const cartSubtotal = itemsForWhatsApp.reduce((sum, item) => sum + parseFloat(item.price.replace('$', '')) * item.quantity, 0);
     const shippingCost = 10;
     const totalCost = cartSubtotal + shippingCost;
@@ -116,14 +112,13 @@ function redirectToWhatsApp(itemsForWhatsApp) {
     message += `Shipping: $${shippingCost.toFixed(2)}\n`;
     message += `Total: $${totalCost.toFixed(2)}\n`;
 
-    // Create the WhatsApp message URL
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-    // Redirect to the WhatsApp URL
+
     window.location.href = whatsappURL;
 }
 
-// Function to handle checkout and success message
+
 function checkout() {
     if (cartItems.length === 0) {
         Swal.fire({
